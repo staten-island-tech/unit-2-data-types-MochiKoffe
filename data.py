@@ -59,7 +59,24 @@ elif temp == 68:
 else: 
     print("cold") """
 
-def total(bill, tip):
-    bill = float(input("enter bill"))
-    print(bill)
-    tip = int(input("how much do you want to tip"))
+""" bill = float(input("enter bill"))
+tip = float(input("how much is your tip"))
+if bill > 0:
+    print(tip)
+if tip >= 0:
+    print(bill*tip+bill) """
+
+
+bill = int(input("what bill"))
+service = input("good, bad, great, okay")
+def getTip(bill, service):
+    if bill >= 0:
+        print(service)
+    if service == ("great"):
+        print(.25)
+    if service == ("bad"):
+        print(0)
+    if service == ("okay"):
+        print(float(.15))
+    if service == ("good"):
+        print(.2)

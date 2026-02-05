@@ -67,22 +67,41 @@ if tip >= 0:
     print(bill*tip+bill) """
 
 
-bill = int(input("what bill"))
+""" bill = int(input("what bill"))
 service = input("good, bad, great, okay")
 def getTip(bill, service):
     if bill >= 0:
         print(service)
     if service == "great":
-        print(float(.25))
+        print(.25)
     elif service == "bad":
-        print(float(0))
+        print(0)
     elif service == "okay":
-        print(float(.15))
+        print(.15)
     elif service == "good":
-        print(float(.2))
+        print(.2)
+getTip(bill, service) """
 
 """ number = int(input("type a number"))
 if number % 2 == 0: 
     print("even")
 else:
     print("odd") """
+
+""" factors=[]
+numero = int(input("type a number"))
+for i in range(2,numero):
+    if numero % i == 0:
+        factors.append(i)
+        print(factors) """
+
+number = int(input("type number"))
+numbera = int(input("type  another bigger number"))
+def wow(number, numbera):
+    GCF=[]
+    last = GCF[-1]
+    for i in range(2,numbera):
+        if number % i + numbera % i == 0:
+            GCF.append(i)
+            print("Last value:",last)
+wow(number, numbera)

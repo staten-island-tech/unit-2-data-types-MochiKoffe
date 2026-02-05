@@ -72,11 +72,17 @@ service = input("good, bad, great, okay")
 def getTip(bill, service):
     if bill >= 0:
         print(service)
-    if service == ("great"):
-        print(.25)
-    if service == ("bad"):
-        print(0)
-    if service == ("okay"):
+    if service == "great":
+        print(float(.25))
+    elif service == "bad":
+        print(float(0))
+    elif service == "okay":
         print(float(.15))
-    if service == ("good"):
-        print(.2)
+    elif service == "good":
+        print(float(.2))
+
+""" number = int(input("type a number"))
+if number % 2 == 0: 
+    print("even")
+else:
+    print("odd") """

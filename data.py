@@ -95,13 +95,16 @@ for i in range(2,numero):
         factors.append(i)
         print(factors) """
 
-number = int(input("type number"))
+""" number = int(input("type number"))
 numbera = int(input("type  another bigger number"))
 def wow(number, numbera):
-    GCF=[]
-    last = GCF[-1]
+    GCF = 0
     for i in range(2,numbera):
         if number % i + numbera % i == 0:
-            GCF.append(i)
-            print("Last value:",last)
-wow(number, numbera)
+            GCF = i
+    print(GCF)
+wow(number, numbera) """
+
+sentence = str(input("type a sentence"))
+y=sentence.split( )
+print(len(y))
